@@ -11,5 +11,5 @@ The applications are based on these tutorials (that use the Vonage CLI to create
 
 ## Quick deploy
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Vonage-Community/sample-video-node-learning_server/tree/main)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Vonage-Community/sample-voice-node-learning_server/tree/main)
 
