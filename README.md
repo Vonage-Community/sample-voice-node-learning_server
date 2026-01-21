@@ -1,4 +1,4 @@
-# Sample Vonage Video NodeJS Server App
+# Sample Vonage Voice NodeJS Server App
 
 <img src="https://developer.nexmo.com/assets/images/Vonage_Nexmo.svg" height="48px" alt="Nexmo is now known as Vonage" />
 
