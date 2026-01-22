@@ -36,6 +36,7 @@
         <button type="button" id="login-button-inbound">Login</button>
     </div>
     <div id="call-controls">
+        <small>*Answer the call in the other tab.</small>
         <button type="button" id="call">Call <span id="call-to-name"></span></button>
         <button type="button" id="hangup">Hang Up</button>
     </div>
@@ -72,15 +73,15 @@
         });
 
         hangUpButton.addEventListener("click", () => {
-        console.log("Hanging up...");
-        client.hangup(callId)
-          .then(() => {
-            hangUpButton.style.display = "none";
-            callButton.style.display = "inline";
-          })
-          .catch(error => {
-            console.error("Error hanging up call: ", error);
-          });                
+          console.log("Hanging up...");
+          client.hangup(callId)
+            .then(() => {
+              hangUpButton.style.display = "none";
+              callButton.style.display = "inline";
+            })
+            .catch(error => {
+              console.error("Error hanging up call: ", error);
+            });                
         });
 
         document.getElementById("login-button-outbound").addEventListener("click", () => {
@@ -110,6 +111,7 @@
                 alert("Please enter a username.");
             }
         });
+      
         document.getElementById("login-button-inbound").addEventListener("click", () => {
             inboundDisplayName = document.getElementById("name-inbound").value;
             if (inboundDisplayName) {
