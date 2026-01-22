@@ -39,7 +39,6 @@ if (!appId || !privateKey) {
 }
 
 const { Vonage } = require('@vonage/server-sdk');
-const { Video } = require('@vonage/video')
 const vonageCredentials = {
   applicationId: appId,
   privateKey: privateKey
