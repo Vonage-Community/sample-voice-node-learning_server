@@ -38,12 +38,14 @@
         callButton.style.display = "none";
         callButton.disabled = false;
         hangUpButton.style.display = "inline";
+        statusElement.innerText = "On a call";
       }
       if (status === "COMPLETED") {
         callId = null;
         callButton.style.display = "inline";
         callButton.disabled = false;
         hangUpButton.style.display = "none";
+        statusElement.innerText = "";
       }
     });
 
