@@ -85,14 +85,11 @@ app.get('/token', async (req, res) => {
 
   const aclPaths = {
     "paths": {
-        // "/*/rtc/**": {},
-        // "/*/users/**": {},
+        "/*/rtc/**": {},
         "/*/sessions/**": {},
         "/*/conversations/**": {},
         "/*/knocking/**": {},
-        // "/*/devices/**": {},
         "/*/legs/**": {},
-        // "/*/session/**": {},
     }
   }
   const token = tokenGenerate(appId, privateKey, {
